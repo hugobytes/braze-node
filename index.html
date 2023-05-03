@@ -16,32 +16,32 @@
 
 <!-- readme-content-start -->
 
-<a id="md:braze-api" class="tsd-anchor"></a><h1><a href="#$braze-api" style="color:inherit;text-decoration:none">braze-api</a></h1><p><a href="https://nodei.co/npm/braze-api/"><img src="https://nodei.co/npm/braze-api.png" alt="NPM"></a></p>
+<a id="md:braze-api" class="tsd-anchor"></a><h1><a href="#md:braze-api">braze-api</a></h1><p><a href="https://nodei.co/npm/braze-api/"><img src="https://nodei.co/npm/braze-api.png" alt="NPM"></a></p>
 <p><a href="https://www.npmjs.com/package/braze-api"><img src="https://img.shields.io/npm/v/braze-api.svg" alt="NPM version"></a>
 <a href="https://github.com/remarkablemark/braze-api/actions/workflows/build.yml"><img src="https://github.com/remarkablemark/braze-api/actions/workflows/build.yml/badge.svg" alt="build"></a>
 <a href="https://codecov.io/gh/remarkablemark/braze-api"><img src="https://codecov.io/gh/remarkablemark/braze-api/branch/master/graph/badge.svg?token=QHPI1I0XI3" alt="codecov"></a>
 <a href="https://www.npmjs.com/package/braze-api"><img src="https://badgen.net/npm/dm/braze-api" alt="NPM downloads"></a></p>
 <p>Node.js library for <a href="https://www.braze.com/">Braze</a> (see <a href="https://replit.com/@remarkablemark/braze-api">demo</a>). The types are inspired by <a href="https://documenter.getpostman.com/view/4689407/SVYrsdsG">Braze&#39;s Postman collection</a>.</p>
-<a id="md:quick-start" class="tsd-anchor"></a><h2><a href="#$quick-start" style="color:inherit;text-decoration:none">Quick Start</a></h2><pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Braze</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;braze-api&#39;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">braze</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Braze</span><span class="hl-1">(</span><span class="hl-3">&#39;YOUR_API_URL&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;YOUR_API_KEY&#39;</span><span class="hl-1">)</span><br/><br/><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-2">braze</span><span class="hl-1">.</span><span class="hl-2">messages</span><span class="hl-1">.</span><span class="hl-6">send</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-2">external_user_ids:</span><span class="hl-1"> [</span><span class="hl-3">&#39;your_external_user_id&#39;</span><span class="hl-1">],</span><br/><span class="hl-1">  </span><span class="hl-2">messages:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-2">email:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-2">app_id:</span><span class="hl-1"> </span><span class="hl-3">&#39;your_app_id&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-2">from:</span><span class="hl-1"> </span><span class="hl-3">&#39;Company &lt;company@example.com&gt;&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-2">email_template_id:</span><span class="hl-1"> </span><span class="hl-3">&#39;your_email_template_id&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">})</span>
-</code></pre>
-<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#$documentation" style="color:inherit;text-decoration:none">Documentation</a></h2><p>See <a href="https://www.braze.com/docs/api/basics/">Braze API guide</a> and <a href="https://documenter.getpostman.com/view/4689407/SVYrsdsG">Braze&#39;s Postman collection</a>.</p>
-<a id="md:prerequisites" class="tsd-anchor"></a><h2><a href="#$prerequisites" style="color:inherit;text-decoration:none">Prerequisites</a></h2><ul>
+<a id="md:quick-start" class="tsd-anchor"></a><h2><a href="#md:quick-start">Quick Start</a></h2><pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Braze</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;braze-api&#39;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">braze</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Braze</span><span class="hl-1">(</span><span class="hl-3">&#39;YOUR_API_URL&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;YOUR_API_KEY&#39;</span><span class="hl-1">)</span><br/><br/><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-2">braze</span><span class="hl-1">.</span><span class="hl-2">messages</span><span class="hl-1">.</span><span class="hl-6">send</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-2">external_user_ids:</span><span class="hl-1"> [</span><span class="hl-3">&#39;your_external_user_id&#39;</span><span class="hl-1">],</span><br/><span class="hl-1">  </span><span class="hl-2">messages:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-2">email:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-2">app_id:</span><span class="hl-1"> </span><span class="hl-3">&#39;your_app_id&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-2">from:</span><span class="hl-1"> </span><span class="hl-3">&#39;Company &lt;company@example.com&gt;&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-2">email_template_id:</span><span class="hl-1"> </span><span class="hl-3">&#39;your_email_template_id&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    },</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">})</span>
+</code><button>Copy</button></pre>
+<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><p>See <a href="https://www.braze.com/docs/api/basics/">Braze API guide</a> and <a href="https://documenter.getpostman.com/view/4689407/SVYrsdsG">Braze&#39;s Postman collection</a>.</p>
+<a id="md:prerequisites" class="tsd-anchor"></a><h2><a href="#md:prerequisites">Prerequisites</a></h2><ul>
 <li><a href="https://nodejs.org/">Node.js</a></li>
 <li><a href="https://www.braze.com/get-started">Braze account</a></li>
 </ul>
-<a id="md:installation" class="tsd-anchor"></a><h2><a href="#$installation" style="color:inherit;text-decoration:none">Installation</a></h2><p><a href="https://www.npmjs.com/package/braze-api">NPM</a>:</p>
+<a id="md:installation" class="tsd-anchor"></a><h2><a href="#md:installation">Installation</a></h2><p><a href="https://www.npmjs.com/package/braze-api">NPM</a>:</p>
 <pre><code class="language-sh"><span class="hl-1">npm </span><span class="hl-3">install</span><span class="hl-1"> </span><span class="hl-3">braze-api</span>
-</code></pre>
+</code><button>Copy</button></pre>
 <p><a href="https://yarnpkg.com/package/braze-api">Yarn</a>:</p>
 <pre><code class="language-sh"><span class="hl-1">yarn </span><span class="hl-3">add</span><span class="hl-1"> </span><span class="hl-3">braze-api</span>
-</code></pre>
-<a id="md:usage" class="tsd-anchor"></a><h2><a href="#$usage" style="color:inherit;text-decoration:none">Usage</a></h2><p>The package needs to be configured with your account&#39;s REST endpoint and API key:</p>
+</code><button>Copy</button></pre>
+<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>The package needs to be configured with your account&#39;s REST endpoint and API key:</p>
 <pre><code class="language-ts"><span class="hl-4">const</span><span class="hl-1"> { </span><span class="hl-5">Braze</span><span class="hl-1"> } = </span><span class="hl-6">require</span><span class="hl-1">(</span><span class="hl-3">&#39;braze-api&#39;</span><span class="hl-1">)</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">braze</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Braze</span><span class="hl-1">(</span><span class="hl-3">&#39;YOUR_API_URL&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;YOUR_API_KEY&#39;</span><span class="hl-1">)</span>
-</code></pre>
+</code><button>Copy</button></pre>
 <p>The same can be done with ES Modules:</p>
 <pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">Braze</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;braze-api&#39;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">braze</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Braze</span><span class="hl-1">(</span><span class="hl-3">&#39;YOUR_API_URL&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;YOUR_API_KEY&#39;</span><span class="hl-1">)</span>
-</code></pre>
-<a id="md:api-url" class="tsd-anchor"></a><h3><a href="#$api-url" style="color:inherit;text-decoration:none">API URL</a></h3><p>Use the <a href="https://www.braze.com/docs/api/basics/#endpoints">REST endpoint</a> provisioned to your account when you log in to the dashboard:</p>
+</code><button>Copy</button></pre>
+<a id="md:api-url" class="tsd-anchor"></a><h3><a href="#md:api-url">API URL</a></h3><p>Use the <a href="https://www.braze.com/docs/api/basics/#endpoints">REST endpoint</a> provisioned to your account when you log in to the dashboard:</p>
 <table>
 <thead>
 <tr>
@@ -86,9 +86,9 @@
 <td><a href="https://rest.fra-02.braze.eu">https://rest.fra-02.braze.eu</a></td>
 </tr>
 </tbody></table>
-<a id="md:api-key" class="tsd-anchor"></a><h2><a href="#$api-key" style="color:inherit;text-decoration:none">API Key</a></h2><p>The <a href="https://www.braze.com/docs/api/basics/#app-group-rest-api-keys">API key</a> can be created in your Braze dashboard.</p>
-<a id="md:api-methods" class="tsd-anchor"></a><h2><a href="#$api-methods" style="color:inherit;text-decoration:none">API Methods</a></h2><p>This library currently supports a subset of the <a href="https://www.braze.com/docs/api/endpoints/">Braze API endpoints</a>. Pull requests are welcome.</p>
-<a id="md:user-data" class="tsd-anchor"></a><h3><a href="#$user-data" style="color:inherit;text-decoration:none">User data</a></h3><ul>
+<a id="md:api-key" class="tsd-anchor"></a><h2><a href="#md:api-key">API Key</a></h2><p>The <a href="https://www.braze.com/docs/api/basics/#app-group-rest-api-keys">API key</a> can be created in your Braze dashboard.</p>
+<a id="md:api-methods" class="tsd-anchor"></a><h2><a href="#md:api-methods">API Methods</a></h2><p>This library currently supports a subset of the <a href="https://www.braze.com/docs/api/endpoints/">Braze API endpoints</a>. Pull requests are welcome.</p>
+<a id="md:user-data" class="tsd-anchor"></a><h3><a href="#md:user-data">User data</a></h3><ul>
 <li><input checked="" disabled="" type="checkbox"> /users/alias/new</li>
 <li><input checked="" disabled="" type="checkbox"> /users/delete</li>
 <li><input checked="" disabled="" type="checkbox"> /users/export/global_control_group</li>
@@ -99,14 +99,14 @@
 <li><input checked="" disabled="" type="checkbox"> /users/identify</li>
 <li><input checked="" disabled="" type="checkbox"> /users/track</li>
 </ul>
-<a id="md:send-messages" class="tsd-anchor"></a><h3><a href="#$send-messages" style="color:inherit;text-decoration:none">Send messages</a></h3><ul>
+<a id="md:send-messages" class="tsd-anchor"></a><h3><a href="#md:send-messages">Send messages</a></h3><ul>
 <li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/send</li>
 <li><input checked="" disabled="" type="checkbox"> /canvas/trigger/send</li>
 <li><input checked="" disabled="" type="checkbox"> /messages/send</li>
 <li><input checked="" disabled="" type="checkbox"> /sends/id/create</li>
 <li><input checked="" disabled="" type="checkbox"> /transactional/v1/campaigns/{{CAMPAIGN_ID}}/send</li>
 </ul>
-<a id="md:schedule-messages" class="tsd-anchor"></a><h3><a href="#$schedule-messages" style="color:inherit;text-decoration:none">Schedule messages</a></h3><ul>
+<a id="md:schedule-messages" class="tsd-anchor"></a><h3><a href="#md:schedule-messages">Schedule messages</a></h3><ul>
 <li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/create</li>
 <li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/delete</li>
 <li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/update</li>
@@ -118,13 +118,13 @@
 <li><input checked="" disabled="" type="checkbox"> /messages/schedule/update</li>
 <li><input checked="" disabled="" type="checkbox"> /messages/scheduled_broadcasts</li>
 </ul>
-<a id="md:subscription-groups" class="tsd-anchor"></a><h3><a href="#$subscription-groups" style="color:inherit;text-decoration:none">Subscription groups</a></h3><ul>
+<a id="md:subscription-groups" class="tsd-anchor"></a><h3><a href="#md:subscription-groups">Subscription groups</a></h3><ul>
 <li><input checked="" disabled="" type="checkbox"> /subscription/status/set</li>
 <li><input checked="" disabled="" type="checkbox"> /v2/subscription/status/set</li>
 <li><input checked="" disabled="" type="checkbox"> /subscription/status/get</li>
 <li><input checked="" disabled="" type="checkbox"> /subscription/user/status</li>
 </ul>
-<a id="md:email-and-email-templates" class="tsd-anchor"></a><h3><a href="#$email-and-email-templates" style="color:inherit;text-decoration:none">Email and email templates</a></h3><ul>
+<a id="md:email-and-email-templates" class="tsd-anchor"></a><h3><a href="#md:email-and-email-templates">Email and email templates</a></h3><ul>
 <li><input checked="" disabled="" type="checkbox"> /email/blacklist</li>
 <li><input checked="" disabled="" type="checkbox"> /email/bounce/remove</li>
 <li><input checked="" disabled="" type="checkbox"> /email/spam/remove</li>
@@ -136,53 +136,53 @@
 <li><input disabled="" type="checkbox"> /templates/email/info</li>
 <li><input disabled="" type="checkbox"> /templates/email/list</li>
 </ul>
-<a id="md:campaigns" class="tsd-anchor"></a><h3><a href="#$campaigns" style="color:inherit;text-decoration:none">Campaigns</a></h3><ul>
+<a id="md:campaigns" class="tsd-anchor"></a><h3><a href="#md:campaigns">Campaigns</a></h3><ul>
 <li><input disabled="" type="checkbox"> /campaigns/data_series</li>
 <li><input disabled="" type="checkbox"> /campaigns/details</li>
 <li><input disabled="" type="checkbox"> /campaigns/list</li>
 <li><input disabled="" type="checkbox"> /sends/data_series</li>
 </ul>
-<a id="md:canvas" class="tsd-anchor"></a><h3><a href="#$canvas" style="color:inherit;text-decoration:none">Canvas</a></h3><ul>
+<a id="md:canvas" class="tsd-anchor"></a><h3><a href="#md:canvas">Canvas</a></h3><ul>
 <li><input disabled="" type="checkbox"> /canvas/data_series</li>
 <li><input disabled="" type="checkbox"> /canvas/data_summary</li>
 <li><input disabled="" type="checkbox"> /canvas/details</li>
 <li><input disabled="" type="checkbox"> /canvas/list</li>
 </ul>
-<a id="md:segments" class="tsd-anchor"></a><h3><a href="#$segments" style="color:inherit;text-decoration:none">Segments</a></h3><ul>
+<a id="md:segments" class="tsd-anchor"></a><h3><a href="#md:segments">Segments</a></h3><ul>
 <li><input disabled="" type="checkbox"> /segments/data_series</li>
 <li><input disabled="" type="checkbox"> /segments/details</li>
 <li><input disabled="" type="checkbox"> /segments/list</li>
 <li><input disabled="" type="checkbox"> /sessions/data_series</li>
 </ul>
-<a id="md:custom-events" class="tsd-anchor"></a><h3><a href="#$custom-events" style="color:inherit;text-decoration:none">Custom events</a></h3><ul>
+<a id="md:custom-events" class="tsd-anchor"></a><h3><a href="#md:custom-events">Custom events</a></h3><ul>
 <li><input disabled="" type="checkbox"> /events/data_series</li>
 <li><input disabled="" type="checkbox"> /events/list</li>
 </ul>
-<a id="md:content-blocks" class="tsd-anchor"></a><h3><a href="#$content-blocks" style="color:inherit;text-decoration:none">Content Blocks</a></h3><ul>
+<a id="md:content-blocks" class="tsd-anchor"></a><h3><a href="#md:content-blocks">Content Blocks</a></h3><ul>
 <li><input disabled="" type="checkbox"> /content_blocks/create</li>
 <li><input disabled="" type="checkbox"> /content_blocks/update</li>
 <li><input checked="" disabled="" type="checkbox"> /content_blocks/info</li>
 <li><input checked="" disabled="" type="checkbox"> /content_blocks/list</li>
 </ul>
-<a id="md:kpi" class="tsd-anchor"></a><h3><a href="#$kpi" style="color:inherit;text-decoration:none">KPI</a></h3><ul>
+<a id="md:kpi" class="tsd-anchor"></a><h3><a href="#md:kpi">KPI</a></h3><ul>
 <li><input disabled="" type="checkbox"> /kpi/dau/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/mau/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/new_users/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/uninstalls/data_series</li>
 </ul>
-<a id="md:news-feed" class="tsd-anchor"></a><h3><a href="#$news-feed" style="color:inherit;text-decoration:none">News Feed</a></h3><ul>
+<a id="md:news-feed" class="tsd-anchor"></a><h3><a href="#md:news-feed">News Feed</a></h3><ul>
 <li><input disabled="" type="checkbox"> /feed/data_series</li>
 <li><input disabled="" type="checkbox"> /feed/details</li>
 <li><input disabled="" type="checkbox"> /feed/list</li>
 </ul>
-<a id="md:sms" class="tsd-anchor"></a><h3><a href="#$sms" style="color:inherit;text-decoration:none">SMS</a></h3><ul>
+<a id="md:sms" class="tsd-anchor"></a><h3><a href="#md:sms">SMS</a></h3><ul>
 <li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers/remove</li>
 <li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers</li>
 </ul>
-<a id="md:purchases" class="tsd-anchor"></a><h3><a href="#$purchases" style="color:inherit;text-decoration:none">Purchases</a></h3><ul>
+<a id="md:purchases" class="tsd-anchor"></a><h3><a href="#md:purchases">Purchases</a></h3><ul>
 <li><input disabled="" type="checkbox"> /purchases/product_list</li>
 </ul>
-<a id="md:catalogs" class="tsd-anchor"></a><h3><a href="#$catalogs" style="color:inherit;text-decoration:none">Catalogs</a></h3><ul>
+<a id="md:catalogs" class="tsd-anchor"></a><h3><a href="#md:catalogs">Catalogs</a></h3><ul>
 <li><input disabled="" type="checkbox"> /synchronous/catalogs/delete</li>
 <li><input checked="" disabled="" type="checkbox"> /synchronous/catalogs/get</li>
 <li><input disabled="" type="checkbox"> /synchronous/catalogs/post</li>
@@ -195,8 +195,8 @@
 <li><input disabled="" type="checkbox"> /asynchronous/catalog-items/update-multiple</li>
 <li><input disabled="" type="checkbox"> /asynchronous/catalog-items/create-multiple</li>
 </ul>
-<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#$contributing" style="color:inherit;text-decoration:none">Contributing</a></h2><p>We encourage contributions! Check out the <a href="https://github.com/remarkablemark/braze-api/blob/master/.github/CONTRIBUTING.md">contributing guide</a> on how to proceed.</p>
-<a id="md:license" class="tsd-anchor"></a><h2><a href="#$license" style="color:inherit;text-decoration:none">License</a></h2><p><a href="https://github.com/remarkablemark/braze-api/blob/master/LICENSE">MIT</a></p>
+<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><p>We encourage contributions! Check out the <a href="https://github.com/remarkablemark/braze-api/blob/master/.github/CONTRIBUTING.md">contributing guide</a> on how to proceed.</p>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p><a href="https://github.com/remarkablemark/braze-api/blob/master/LICENSE">MIT</a></p>
 <!-- readme-content-end -->
 
 <!-- readme-content-placeholder -->
