@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>braze-api</title><meta name="description" content="Documentation for braze-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css?cache=1690677225779"/><link rel="stylesheet" href="assets/highlight.css?cache=1690677225779"/><script defer src="assets/main.js?cache=1690677225779"></script><script async src="assets/search.js?cache=1690677225779" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>braze-api</title><meta name="description" content="Documentation for braze-api"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css?cache=1690685669866"/><link rel="stylesheet" href="assets/highlight.css?cache=1690685669866"/><script defer src="assets/main.js?cache=1690685669866"></script><script async src="assets/search.js?cache=1690685669866" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base=".">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -92,55 +92,6 @@
 </tbody></table>
 <a id="md:api-key" class="tsd-anchor"></a><h3><a href="#md:api-key">API Key</a></h3><p>The <a href="https://www.braze.com/docs/api/basics#creating-and-managing-rest-api-keys">API key</a> can be created in your Braze dashboard.</p>
 <a id="md:api-methods" class="tsd-anchor"></a><h2><a href="#md:api-methods">API Methods</a></h2><p>The library supports the following <a href="https://www.braze.com/docs/api/home">Braze API endpoints</a>. Pull requests are welcome!</p>
-<a id="md:user-data" class="tsd-anchor"></a><h3><a href="#md:user-data">User data</a></h3><ul>
-<li><input checked="" disabled="" type="checkbox"> /users/alias/new</li>
-<li><input checked="" disabled="" type="checkbox"> /users/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /users/export/global_control_group</li>
-<li><input checked="" disabled="" type="checkbox"> /users/export/ids</li>
-<li><input checked="" disabled="" type="checkbox"> /users/export/segment</li>
-<li><input checked="" disabled="" type="checkbox"> /users/external_ids/rename</li>
-<li><input checked="" disabled="" type="checkbox"> /users/external_ids/remove</li>
-<li><input checked="" disabled="" type="checkbox"> /users/merge</li>
-<li><input checked="" disabled="" type="checkbox"> /users/identify</li>
-<li><input checked="" disabled="" type="checkbox"> /users/track</li>
-</ul>
-<a id="md:send-messages" class="tsd-anchor"></a><h3><a href="#md:send-messages">Send messages</a></h3><ul>
-<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/send</li>
-<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/send</li>
-<li><input checked="" disabled="" type="checkbox"> /messages/send</li>
-<li><input checked="" disabled="" type="checkbox"> /sends/id/create</li>
-<li><input checked="" disabled="" type="checkbox"> /transactional/v1/campaigns/{{CAMPAIGN_ID}}/send</li>
-</ul>
-<a id="md:schedule-messages" class="tsd-anchor"></a><h3><a href="#md:schedule-messages">Schedule messages</a></h3><ul>
-<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/create</li>
-<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/update</li>
-<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/create</li>
-<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/update</li>
-<li><input checked="" disabled="" type="checkbox"> /messages/schedule/create</li>
-<li><input checked="" disabled="" type="checkbox"> /messages/schedule/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /messages/schedule/update</li>
-<li><input checked="" disabled="" type="checkbox"> /messages/scheduled_broadcasts</li>
-</ul>
-<a id="md:subscription-groups" class="tsd-anchor"></a><h3><a href="#md:subscription-groups">Subscription groups</a></h3><ul>
-<li><input checked="" disabled="" type="checkbox"> /subscription/status/set</li>
-<li><input checked="" disabled="" type="checkbox"> /v2/subscription/status/set</li>
-<li><input checked="" disabled="" type="checkbox"> /subscription/status/get</li>
-<li><input checked="" disabled="" type="checkbox"> /subscription/user/status</li>
-</ul>
-<a id="md:email-and-email-templates" class="tsd-anchor"></a><h3><a href="#md:email-and-email-templates">Email and email templates</a></h3><ul>
-<li><input checked="" disabled="" type="checkbox"> /email/blacklist</li>
-<li><input checked="" disabled="" type="checkbox"> /email/bounce/remove</li>
-<li><input checked="" disabled="" type="checkbox"> /email/spam/remove</li>
-<li><input disabled="" type="checkbox"> /email/status</li>
-<li><input checked="" disabled="" type="checkbox"> /templates/email/create</li>
-<li><input checked="" disabled="" type="checkbox"> /templates/email/update</li>
-<li><input disabled="" type="checkbox"> /email/hard_bounces</li>
-<li><input disabled="" type="checkbox"> /email/unsubscribes</li>
-<li><input checked="" disabled="" type="checkbox"> /templates/email/info</li>
-<li><input checked="" disabled="" type="checkbox"> /templates/email/list</li>
-</ul>
 <a id="md:campaigns" class="tsd-anchor"></a><h3><a href="#md:campaigns">Campaigns</a></h3><ul>
 <li><input disabled="" type="checkbox"> /campaigns/data_series</li>
 <li><input disabled="" type="checkbox"> /campaigns/details</li>
@@ -153,26 +104,49 @@
 <li><input disabled="" type="checkbox"> /canvas/details</li>
 <li><input disabled="" type="checkbox"> /canvas/list</li>
 </ul>
-<a id="md:segments" class="tsd-anchor"></a><h3><a href="#md:segments">Segments</a></h3><ul>
-<li><input disabled="" type="checkbox"> /segments/data_series</li>
-<li><input disabled="" type="checkbox"> /segments/details</li>
-<li><input disabled="" type="checkbox"> /segments/list</li>
-<li><input disabled="" type="checkbox"> /sessions/data_series</li>
-</ul>
-<a id="md:custom-events" class="tsd-anchor"></a><h3><a href="#md:custom-events">Custom events</a></h3><ul>
-<li><input disabled="" type="checkbox"> /events/data_series</li>
-<li><input disabled="" type="checkbox"> /events/list</li>
+<a id="md:catalogs" class="tsd-anchor"></a><h3><a href="#md:catalogs">Catalogs</a></h3><ul>
+<li><input disabled="" type="checkbox"> DELETE /catalogs/{catalog_name}/items</li>
+<li><input disabled="" type="checkbox"> PATCH /catalogs/{catalog_name}/items</li>
+<li><input disabled="" type="checkbox"> POST /catalogs/{catalog_name}/items</li>
+<li><input disabled="" type="checkbox"> PUT /catalogs/{catalog_name}/items/</li>
+<li><input disabled="" type="checkbox"> DELETE /catalogs/{catalog_name}/items/{item_id}</li>
+<li><input checked="" disabled="" type="checkbox"> GET /catalogs/{catalog_name}/items/{item_id}</li>
+<li><input checked="" disabled="" type="checkbox"> GET /catalogs/{catalog_name}/items</li>
+<li><input disabled="" type="checkbox"> PATCH /catalogs/{catalog_name}/items/{item_id}</li>
+<li><input disabled="" type="checkbox"> POST /catalogs/{catalog_name}/items/{item_id}</li>
+<li><input disabled="" type="checkbox"> PUT /catalogs/{catalog_name}/items/{item_id}</li>
+<li><input disabled="" type="checkbox"> DELETE /catalogs/{catalog_name}</li>
+<li><input checked="" disabled="" type="checkbox"> GET /catalogs</li>
+<li><input disabled="" type="checkbox"> POST /catalogs</li>
 </ul>
 <a id="md:content-blocks" class="tsd-anchor"></a><h3><a href="#md:content-blocks">Content Blocks</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /content_blocks/list</li>
+<li><input checked="" disabled="" type="checkbox"> /content_blocks/info</li>
 <li><input disabled="" type="checkbox"> /content_blocks/create</li>
 <li><input disabled="" type="checkbox"> /content_blocks/update</li>
-<li><input checked="" disabled="" type="checkbox"> /content_blocks/info</li>
-<li><input checked="" disabled="" type="checkbox"> /content_blocks/list</li>
+</ul>
+<a id="md:custom-events" class="tsd-anchor"></a><h3><a href="#md:custom-events">Custom Events</a></h3><ul>
+<li><input disabled="" type="checkbox"> /events/list</li>
+<li><input disabled="" type="checkbox"> /events/data_series</li>
+</ul>
+<a id="md:email-list" class="tsd-anchor"></a><h3><a href="#md:email-list">Email List</a></h3><ul>
+<li><input disabled="" type="checkbox"> /email/hard_bounces</li>
+<li><input disabled="" type="checkbox"> /email/unsubscribes</li>
+<li><input checked="" disabled="" type="checkbox"> /email/blacklist</li>
+<li><input disabled="" type="checkbox"> /email/status</li>
+<li><input checked="" disabled="" type="checkbox"> /email/bounce/remove</li>
+<li><input checked="" disabled="" type="checkbox"> /email/spam/remove</li>
+</ul>
+<a id="md:email-templates" class="tsd-anchor"></a><h3><a href="#md:email-templates">Email Templates</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /templates/email/list</li>
+<li><input checked="" disabled="" type="checkbox"> /templates/email/info</li>
+<li><input checked="" disabled="" type="checkbox"> /templates/email/create</li>
+<li><input checked="" disabled="" type="checkbox"> /templates/email/update</li>
 </ul>
 <a id="md:kpi" class="tsd-anchor"></a><h3><a href="#md:kpi">KPI</a></h3><ul>
+<li><input disabled="" type="checkbox"> /kpi/new_users/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/dau/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/mau/data_series</li>
-<li><input disabled="" type="checkbox"> /kpi/new_users/data_series</li>
 <li><input disabled="" type="checkbox"> /kpi/uninstalls/data_series</li>
 </ul>
 <a id="md:news-feed" class="tsd-anchor"></a><h3><a href="#md:news-feed">News Feed</a></h3><ul>
@@ -180,25 +154,75 @@
 <li><input disabled="" type="checkbox"> /feed/details</li>
 <li><input disabled="" type="checkbox"> /feed/list</li>
 </ul>
-<a id="md:sms" class="tsd-anchor"></a><h3><a href="#md:sms">SMS</a></h3><ul>
-<li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers/remove</li>
-<li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers</li>
-</ul>
 <a id="md:purchases" class="tsd-anchor"></a><h3><a href="#md:purchases">Purchases</a></h3><ul>
 <li><input disabled="" type="checkbox"> /purchases/product_list</li>
+<li><input disabled="" type="checkbox"> /purchases/quantity_series</li>
+<li><input disabled="" type="checkbox"> /purchases/revenue_series</li>
 </ul>
-<a id="md:catalogs" class="tsd-anchor"></a><h3><a href="#md:catalogs">Catalogs</a></h3><ul>
-<li><input disabled="" type="checkbox"> /synchronous/catalogs/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /synchronous/catalogs/get</li>
-<li><input disabled="" type="checkbox"> /synchronous/catalogs/post</li>
-<li><input disabled="" type="checkbox"> /synchronous/catalog-items/delete</li>
-<li><input checked="" disabled="" type="checkbox"> /synchronous/catalog-items/list</li>
-<li><input checked="" disabled="" type="checkbox"> /synchronous/catalog-items/get</li>
-<li><input disabled="" type="checkbox"> /synchronous/catalog-items/update</li>
-<li><input disabled="" type="checkbox"> /synchronous/catalog-items/create</li>
-<li><input disabled="" type="checkbox"> /asynchronous/catalog-items/delete-multiple</li>
-<li><input disabled="" type="checkbox"> /asynchronous/catalog-items/update-multiple</li>
-<li><input disabled="" type="checkbox"> /asynchronous/catalog-items/create-multiple</li>
+<a id="md:preference-center" class="tsd-anchor"></a><h3><a href="#md:preference-center">Preference Center</a></h3><ul>
+<li><input disabled="" type="checkbox"> /preference_center/v1/{preferenceCenterExternalId}/url/{userId}</li>
+<li><input disabled="" type="checkbox"> /preference_center/v1/list</li>
+<li><input disabled="" type="checkbox"> /preference_center/v1/{preferenceCenterExternalId}</li>
+<li><input disabled="" type="checkbox"> /preference_center/v1</li>
+<li><input disabled="" type="checkbox"> /preference_center/v1/{preferenceCenterExternalId}</li>
+</ul>
+<a id="md:schedule-messages" class="tsd-anchor"></a><h3><a href="#md:schedule-messages">Schedule Messages</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /messages/scheduled_broadcasts</li>
+<li><input checked="" disabled="" type="checkbox"> /messages/schedule/delete</li>
+<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/delete</li>
+<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/delete</li>
+<li><input checked="" disabled="" type="checkbox"> /messages/schedule/create</li>
+<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/create</li>
+<li><input checked="" disabled="" type="checkbox"> /messages/schedule/update</li>
+<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/schedule/update</li>
+<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/create</li>
+<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/schedule/update</li>
+</ul>
+<a id="md:scim" class="tsd-anchor"></a><h3><a href="#md:scim">SCIM</a></h3><ul>
+<li><input disabled="" type="checkbox"> DELETE /scim/v2/Users/{id}</li>
+<li><input disabled="" type="checkbox"> GET /scim/v2/Users?filter={<a href="mailto:userName@example.com">userName@example.com</a>}</li>
+<li><input disabled="" type="checkbox"> GET /scim/v2/Users/{id}</li>
+<li><input disabled="" type="checkbox"> POST /scim/v2/Users</li>
+<li><input disabled="" type="checkbox"> PUT /scim/v2/Users/{id}</li>
+</ul>
+<a id="md:segments" class="tsd-anchor"></a><h3><a href="#md:segments">Segments</a></h3><ul>
+<li><input disabled="" type="checkbox"> /segments/list</li>
+<li><input disabled="" type="checkbox"> /segments/data_series</li>
+<li><input disabled="" type="checkbox"> /segments/details</li>
+<li><input disabled="" type="checkbox"> /sessions/data_series</li>
+</ul>
+<a id="md:send-messages" class="tsd-anchor"></a><h3><a href="#md:send-messages">Send Messages</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /sends/id/create</li>
+<li><input checked="" disabled="" type="checkbox"> /messages/send</li>
+<li><input checked="" disabled="" type="checkbox"> /transactional/v1/campaigns/{{CAMPAIGN_ID}}/send</li>
+<li><input checked="" disabled="" type="checkbox"> /campaigns/trigger/send</li>
+<li><input checked="" disabled="" type="checkbox"> /canvas/trigger/send</li>
+</ul>
+<a id="md:sms" class="tsd-anchor"></a><h3><a href="#md:sms">SMS</a></h3><ul>
+<li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers</li>
+<li><input disabled="" type="checkbox"> /sms/invalid_phone_numbers/remove</li>
+</ul>
+<a id="md:subscription-groups" class="tsd-anchor"></a><h3><a href="#md:subscription-groups">Subscription Groups</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /subscription/status/get</li>
+<li><input checked="" disabled="" type="checkbox"> /subscription/user/status</li>
+<li><input checked="" disabled="" type="checkbox"> /subscription/status/set</li>
+<li><input checked="" disabled="" type="checkbox"> /v2/subscription/status/set</li>
+</ul>
+<a id="md:user-data" class="tsd-anchor"></a><h3><a href="#md:user-data">User Data</a></h3><ul>
+<li><input checked="" disabled="" type="checkbox"> /users/export/global_control_group</li>
+<li><input checked="" disabled="" type="checkbox"> /users/export/ids</li>
+<li><input checked="" disabled="" type="checkbox"> /users/export/segment</li>
+<li><input checked="" disabled="" type="checkbox"> /users/external_ids/remove</li>
+<li><input checked="" disabled="" type="checkbox"> /users/external_ids/rename</li>
+<li><input checked="" disabled="" type="checkbox"> /users/alias/new</li>
+<li><input checked="" disabled="" type="checkbox"> /users/delete</li>
+<li><input checked="" disabled="" type="checkbox"> /users/identify</li>
+<li><input checked="" disabled="" type="checkbox"> /users/track</li>
+<li><input disabled="" type="checkbox"> /users/alias/update</li>
+<li><input checked="" disabled="" type="checkbox"> /users/merge</li>
+</ul>
+<a id="md:live-activity" class="tsd-anchor"></a><h3><a href="#md:live-activity">Live Activity</a></h3><ul>
+<li><input disabled="" type="checkbox"> /messages/live_activity/update</li>
 </ul>
 <a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><p>We encourage contributions! See the <a href="https://github.com/remarkablemark/braze-api/blob/master/.github/CONTRIBUTING.md">guide</a> on how to proceed. :wave:</p>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p><a href="https://github.com/remarkablemark/braze-api/blob/master/LICENSE">MIT</a></p>
@@ -243,21 +267,25 @@
 <li><a href="#md:api-methods"><span>API <wbr/>Methods</span></a></li>
 <li>
 <ul>
-<li><a href="#md:user-data"><span>User data</span></a></li>
-<li><a href="#md:send-messages"><span>Send messages</span></a></li>
-<li><a href="#md:schedule-messages"><span>Schedule messages</span></a></li>
-<li><a href="#md:subscription-groups"><span>Subscription groups</span></a></li>
-<li><a href="#md:email-and-email-templates"><span>Email and email templates</span></a></li>
 <li><a href="#md:campaigns"><span>Campaigns</span></a></li>
 <li><a href="#md:canvas"><span>Canvas</span></a></li>
-<li><a href="#md:segments"><span>Segments</span></a></li>
-<li><a href="#md:custom-events"><span>Custom events</span></a></li>
+<li><a href="#md:catalogs"><span>Catalogs</span></a></li>
 <li><a href="#md:content-blocks"><span>Content <wbr/>Blocks</span></a></li>
+<li><a href="#md:custom-events"><span>Custom <wbr/>Events</span></a></li>
+<li><a href="#md:email-list"><span>Email <wbr/>List</span></a></li>
+<li><a href="#md:email-templates"><span>Email <wbr/>Templates</span></a></li>
 <li><a href="#md:kpi"><span>KPI</span></a></li>
 <li><a href="#md:news-feed"><span>News <wbr/>Feed</span></a></li>
-<li><a href="#md:sms"><span>SMS</span></a></li>
 <li><a href="#md:purchases"><span>Purchases</span></a></li>
-<li><a href="#md:catalogs"><span>Catalogs</span></a></li></ul></li>
+<li><a href="#md:preference-center"><span>Preference <wbr/>Center</span></a></li>
+<li><a href="#md:schedule-messages"><span>Schedule <wbr/>Messages</span></a></li>
+<li><a href="#md:scim"><span>SCIM</span></a></li>
+<li><a href="#md:segments"><span>Segments</span></a></li>
+<li><a href="#md:send-messages"><span>Send <wbr/>Messages</span></a></li>
+<li><a href="#md:sms"><span>SMS</span></a></li>
+<li><a href="#md:subscription-groups"><span>Subscription <wbr/>Groups</span></a></li>
+<li><a href="#md:user-data"><span>User <wbr/>Data</span></a></li>
+<li><a href="#md:live-activity"><span>Live <wbr/>Activity</span></a></li></ul></li>
 <li><a href="#md:contributing"><span>Contributing</span></a></li>
 <li><a href="#md:license"><span>License</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
